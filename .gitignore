@@ -5,7 +5,7 @@ __pycache__/
 *.log
 *.tmp
 
-# Arquivos gerados pelo Robot Framework (não versionar)
+# Relatórios do Robot Framework
 log.html
 output.xml
 report.html
@@ -13,7 +13,14 @@ PIPE
 produtos.json
 resultado_catalogo.json
 
-# Opcional: se quiser manter CSVs e snapshots, NÃO os ignore
-# catalogo_estoque.csv
-# catalogo_geral.csv
-# etc.
+# CSVs e JSONs gerados automaticamente
+catalogo_estoque.csv
+catalogo_geral.csv
+catalogo_por_categoria.csv
+movimentacoes.csv
+produtos_sem_estoque.csv
+produtos_por_estoque.csv
+vendas_acumuladas.csv
+
+# Pasta de histórico (snapshots)
+historico/
