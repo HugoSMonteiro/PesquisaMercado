@@ -31,9 +31,10 @@ jobs:
 
       - name: Commit e push dos arquivos gerados
         run: |
-             git config user.name "github-actions[bot]"
-             git config user.email "github-actions[bot]@users.noreply.github.com"
-             git add historico/ catalogo_geral.csv catalogo_por_categoria.csv movimentacoes.csv vendas_acumuladas.csv produtos_sem_estoque.csv 2>/dev/null || true
-             git commit -m "Atualização automática do monitoramento [skip ci]" || echo "Nada para commitar"
-             git pull --rebase origin main
-             git push
+       git config user.name "github-actions[bot]"
+       git config user.email "github-actions[bot]@users.noreply.github.com"
+       git add historico/ catalogo_geral.csv catalogo_por_categoria.csv movimentacoes.csv vendas_acumuladas.csv produtos_sem_estoque.csv 2>/dev/null || true
+       git commit -m "Atualização automática do monitoramento [skip ci]" || echo "Nada para commitar"
+       git fetch origin main
+       git rebase origin/main || git rebase --abort
+       git push origin main || echo "Nada para fazer no push"
