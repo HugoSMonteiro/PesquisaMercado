@@ -1,0 +1,73 @@
+{
+  "success": true,
+  "request_id": "8a08f4ebf678",
+  "data": {
+    "store_id": "3",
+    "products": [
+      {
+        "id": "1349",
+        "estoque": 4,
+        "unidade": "UN"
+      },
+      {
+        "id": "1493",
+        "estoque": 1,
+        "unidade": "UN"
+      },
+      {
+        "id": "275",
+        "estoque": 4,
+        "unidade": "UN"
+      },
+      {
+        "id": "1370",
+        "estoque": 4,
+        "unidade": "UN"
+      },
+      {
+        "id": "1574",
+        "estoque": 2,
+        "unidade": "UN"
+      },
+      {
+        "id": "1593",
+        "estoque": 9,
+        "unidade": "UN"
+      },
+      {
+        "id": "71",
+        "estoque": 1,
+        "unidade": "UN"
+      },
+      {
+        "id": "1307",
+        "estoque": 7,
+        "unidade": "UN"
+      },
+      {
+        "id": "1510",
+        "estoque": 4,
+        "unidade": "UN"
+      },
+      {
+        "id": "1353",
+        "estoque": 4,
+        "unidade": "UN"
+      },
+      {
+        "id": "1424",
+        "estoque": 4,
+        "unidade": "UN"
+      },
+      {
+        "id": "1380",
+        "estoque": 9,
+        "unidade": "UN"
+      }
+    ],
+    "requested_count": 12,
+    "resolved_count": 12,
+    "failed_count": 0,
+    "generated_at": "2026-08-23T12:10:56-03:00"
+  }
+}
