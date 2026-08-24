@@ -1,42 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.12.10 on win32)" generated="2026-08-23T12:08:49.894719" rpa="false" schemaversion="5">
-<suite id="s1" name="Catalogo" source="C:\PesquisaDeMercado\tests\catalogo.robot">
+<robot generator="Robot 7.4.2 (Python 3.10.7 on win32)" generated="2026-08-23T22:10:02.520970" rpa="false" schemaversion="5">
+<suite id="s1" name="Catalogo" source="C:\ws_2026\PesquisadeMercado\tests\catalogo.robot">
 <test id="s1-t1" name="Processar Catalogo Completo Automaticamente" line="14">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-08-23T12:08:50.157652" level="INFO">
+<msg time="2026-08-23T22:10:03.015682" level="INFO">
 🚀 INICIANDO PROCESSAMENTO AUTOMÁTICO</msg>
 <arg>\n🚀 INICIANDO PROCESSAMENTO AUTOMÁTICO</arg>
 <arg>console=True</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-08-23T12:08:50.157652" elapsed="0.000000"/>
+<status status="PASS" start="2026-08-23T22:10:03.014685" elapsed="0.001996"/>
 </kw>
-<kw name="Processar Catalogo Completo" owner="catalogo_api.CatalogoAPI">
-<msg time="2026-08-23T12:08:50.923592" level="INFO">============================================================
-🚀 PROCESSANDO CATÁLOGO COMPLETO
-============================================================
-
-🔍 Buscando catálogo: https://appdeconsulta.com/index.php/backend/index.php?route=public/loja/49a204fcc142
-📥 Status: 200
-✅ 560 produtos encontrados
-📦 560 produtos extraídos
-
-📤 Enviando 560 produtos para consulta de estoque...
-📥 Status: 200
-
-📊 Resumo:
-  Solicitados: 12
-  Resolvidos: 12
-  Falhas: 0</msg>
-<msg time="2026-08-23T12:08:50.928589" level="INFO">${resultado} = {'success': True, 'catalogo': {'success': True, 'request_id': '8e440e91c260', 'data': {'store': {'id': '3', 'name': 'ITAPUA COND 51', 'public_hash': '49a204fcc142'}, 'theme': {'cor_primaria': '#0F172A...</msg>
+<kw name="Processar Catalogo Completo">
+<msg time="2026-08-23T22:10:03.028242" level="FAIL">No keyword with name 'Processar Catalogo Completo' found.</msg>
 <var>${resultado}</var>
-<status status="PASS" start="2026-08-23T12:08:50.158650" elapsed="0.769939"/>
+<status status="FAIL" start="2026-08-23T22:10:03.028242" elapsed="0.000000">No keyword with name 'Processar Catalogo Completo' found.</status>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-08-23T12:08:50.929587" level="INFO">${success} = True</msg>
 <var>${success}</var>
 <arg>${resultado.get('success', False)}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-08-23T12:08:50.928589" elapsed="0.000998"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.028242" elapsed="0.000997"/>
 </kw>
 <if>
 <branch type="IF" condition="not ${success}">
@@ -44,101 +27,96 @@
 <arg>❌ Falha no processamento!</arg>
 <arg>console=True</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2026-08-23T12:08:50.930587" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.032231" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
 <arg>Erro: ${resultado.get('error', 'Desconhecido')}</arg>
 <arg>console=True</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2026-08-23T12:08:50.930587" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.033228" elapsed="0.000000"/>
 </kw>
 <kw name="Fail" owner="BuiltIn">
 <arg>msg=Falha no processamento do catálogo</arg>
 <doc>Fails the test with the given message and optionally alters its tags.</doc>
-<status status="NOT RUN" start="2026-08-23T12:08:50.930587" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.033228" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2026-08-23T12:08:50.930587" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.030237" elapsed="0.002991"/>
 </branch>
-<status status="PASS" start="2026-08-23T12:08:50.930587" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.030237" elapsed="0.002991"/>
 </if>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-08-23T12:08:50.931586" level="INFO">${estoques_organizados} = {'4': [{'id': '1349', 'codigo': '', 'descricao': '', 'unidade': 'UN', 'estoque': 4}, {'id': '275', 'codigo': '', 'descricao': '', 'unidade': 'UN', 'estoque': 4}, {'id': '1370', 'codigo': '', 'descrica...</msg>
 <var>${estoques_organizados}</var>
 <arg>${resultado['estoques_organizados']}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-08-23T12:08:50.931586" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.037217" elapsed="0.000000"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-08-23T12:08:50.932585" level="INFO">${produtos_com_estoque} = [{'id': '1349', 'estoque': 4, 'unidade': 'UN'}, {'id': '1493', 'estoque': 1, 'unidade': 'UN'}, {'id': '275', 'estoque': 4, 'unidade': 'UN'}, {'id': '1370', 'estoque': 4, 'unidade': 'UN'}, {'id': '1574...</msg>
 <var>${produtos_com_estoque}</var>
 <arg>${resultado['produtos_com_estoque']}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-08-23T12:08:50.932585" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.056553" elapsed="0.000000"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-08-23T12:08:50.933584" level="INFO">${response_estoque} = {'success': True, 'request_id': '36281e158ebb', 'data': {'store_id': '3', 'products': [{'id': '1349', 'estoque': 4, 'unidade': 'UN'}, {'id': '1493', 'estoque': 1, 'unidade': 'UN'}, {'id': '275', 'esto...</msg>
 <var>${response_estoque}</var>
 <arg>${resultado['response_estoque']}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-08-23T12:08:50.933584" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.057551" elapsed="0.000000"/>
 </kw>
 <kw name="Get Length" owner="BuiltIn">
-<msg time="2026-08-23T12:08:50.934584" level="INFO">Length is 12.</msg>
-<msg time="2026-08-23T12:08:50.934584" level="INFO">${total_produtos} = 12</msg>
 <var>${total_produtos}</var>
 <arg>${produtos_com_estoque}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2026-08-23T12:08:50.934584" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.058549" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-08-23T12:08:50.946596" level="INFO">
-✅ PROCESSAMENTO CONCLUÍDO!</msg>
 <arg>\n✅ PROCESSAMENTO CONCLUÍDO!</arg>
 <arg>console=True</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-08-23T12:08:50.935583" elapsed="0.021618"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.061540" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-08-23T12:08:50.958215" level="INFO">Total de produtos com estoque: 12</msg>
 <arg>Total de produtos com estoque: ${total_produtos}</arg>
 <arg>console=True</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-08-23T12:08:50.958215" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.064533" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-08-23T12:08:50.959205" level="INFO">
-===== CATÁLOGO ORGANIZADO POR ESTOQUE =====</msg>
 <arg>\n===== CATÁLOGO ORGANIZADO POR ESTOQUE =====</arg>
 <arg>console=True</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-08-23T12:08:50.958215" elapsed="0.000990"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.065530" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<var>${estoque_ids}</var>
+<arg>list($estoques_organizados.keys())</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2026-08-23T22:10:03.066528" elapsed="0.000998"/>
 </kw>
 <for flavor="IN">
 <iter>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-08-23T12:08:50.962204" level="FAIL">Resolving variable '${estoques_organizados[4]}' failed: KeyError: 4</msg>
+<kw name="Evaluate" owner="BuiltIn">
 <var>${produtos_estoque}</var>
-<arg>${estoques_organizados[${estoque_id}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="FAIL" start="2026-08-23T12:08:50.960204" elapsed="0.002000">Resolving variable '${estoques_organizados[4]}' failed: KeyError: 4</status>
+<arg>$estoques_organizados[$estoque_id]</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2026-08-23T22:10:03.069125" elapsed="0.000000"/>
 </kw>
 <kw name="Get Length" owner="BuiltIn">
 <var>${qtd_produtos}</var>
 <arg>${produtos_estoque}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="NOT RUN" start="2026-08-23T12:08:50.962204" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.069125" elapsed="0.000998"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
 <arg>\n📦 Estoque ${estoque_id} (${qtd_produtos} produtos):</arg>
 <arg>console=True</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2026-08-23T12:08:50.962204" elapsed="0.000998"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.070499" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
 <arg>${'-' * 50}</arg>
 <arg>console=True</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2026-08-23T12:08:50.963202" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.070499" elapsed="0.000000"/>
 </kw>
 <for flavor="IN">
 <iter>
@@ -146,60 +124,60 @@
 <var>${produto_id}</var>
 <arg>${produto['id']}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2026-08-23T12:08:50.963202" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.071498" elapsed="0.000000"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
 <var>${descricao}</var>
 <arg>${produto.get('descricao', 'N/A')}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2026-08-23T12:08:50.963202" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.071498" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
 <arg>ID: ${produto_id} | ${descricao}</arg>
 <arg>console=True</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2026-08-23T12:08:50.963202" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.071498" elapsed="0.000000"/>
 </kw>
 <var name="${produto}"/>
-<status status="NOT RUN" start="2026-08-23T12:08:50.963202" elapsed="0.001000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.070499" elapsed="0.000999"/>
 </iter>
 <var>${produto}</var>
 <value>@{produtos_estoque}</value>
-<status status="NOT RUN" start="2026-08-23T12:08:50.963202" elapsed="0.001000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.070499" elapsed="0.001996"/>
 </for>
-<var name="${estoque_id}">4</var>
-<status status="FAIL" start="2026-08-23T12:08:50.960204" elapsed="0.003998">Resolving variable '${estoques_organizados[4]}' failed: KeyError: 4</status>
+<var name="${estoque_id}"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.069125" elapsed="0.003370"/>
 </iter>
 <var>${estoque_id}</var>
-<value>@{estoques_organizados.keys()}</value>
-<status status="FAIL" start="2026-08-23T12:08:50.959205" elapsed="0.004997">Resolving variable '${estoques_organizados[4]}' failed: KeyError: 4</status>
+<value>@{estoque_ids}</value>
+<status status="NOT RUN" start="2026-08-23T22:10:03.068522" elapsed="0.003973"/>
 </for>
 <kw name="Evaluate" owner="BuiltIn">
 <var>${json_text}</var>
 <arg>__import__('json').dumps($response_estoque, ensure_ascii=False, indent=2)</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2026-08-23T12:08:50.964202" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.073257" elapsed="0.000000"/>
 </kw>
 <kw name="Create File" owner="OperatingSystem">
 <arg>${OUTPUT_JSON}</arg>
 <arg>${json_text}</arg>
 <arg>encoding=UTF-8</arg>
 <doc>Creates a file with the given content and encoding.</doc>
-<status status="NOT RUN" start="2026-08-23T12:08:50.965201" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.073257" elapsed="0.000000"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
 <var>${csv_content}</var>
 <arg>ESTOQUE;ID;DESCRICAO;CODIGO;UNIDADE\n</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2026-08-23T12:08:50.966200" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.074253" elapsed="0.000000"/>
 </kw>
 <for flavor="IN">
 <iter>
-<kw name="Set Variable" owner="BuiltIn">
+<kw name="Evaluate" owner="BuiltIn">
 <var>${produtos_estoque}</var>
-<arg>${estoques_organizados[${estoque_id}]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2026-08-23T12:08:50.967200" elapsed="0.000000"/>
+<arg>$estoques_organizados[$estoque_id]</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2026-08-23T22:10:03.075251" elapsed="0.000000"/>
 </kw>
 <for flavor="IN">
 <iter>
@@ -207,79 +185,79 @@
 <var>${pid}</var>
 <arg>${produto['id']}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2026-08-23T12:08:50.968199" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.075251" elapsed="0.000000"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
 <var>${pdesc}</var>
 <arg>${produto.get('descricao', '')}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2026-08-23T12:08:50.968199" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.076248" elapsed="0.000000"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
 <var>${pcod}</var>
 <arg>${produto.get('codigo', '')}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2026-08-23T12:08:50.968199" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.076248" elapsed="0.000000"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
 <var>${puni}</var>
 <arg>${produto.get('unidade', '')}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2026-08-23T12:08:50.968199" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.076248" elapsed="0.000000"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
 <var>${csv_content}</var>
 <arg>${csv_content}${estoque_id};${pid};${pdesc};${pcod};${puni}\n</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2026-08-23T12:08:50.968199" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.076248" elapsed="0.000998"/>
 </kw>
 <var name="${produto}"/>
-<status status="NOT RUN" start="2026-08-23T12:08:50.967200" elapsed="0.000999"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.075251" elapsed="0.001995"/>
 </iter>
 <var>${produto}</var>
 <value>@{produtos_estoque}</value>
-<status status="NOT RUN" start="2026-08-23T12:08:50.967200" elapsed="0.000999"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.075251" elapsed="0.001995"/>
 </for>
 <var name="${estoque_id}"/>
-<status status="NOT RUN" start="2026-08-23T12:08:50.967200" elapsed="0.000999"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.075251" elapsed="0.001995"/>
 </iter>
 <var>${estoque_id}</var>
-<value>@{estoques_organizados.keys()}</value>
-<status status="NOT RUN" start="2026-08-23T12:08:50.967200" elapsed="0.000999"/>
+<value>@{estoque_ids}</value>
+<status status="NOT RUN" start="2026-08-23T22:10:03.074253" elapsed="0.002993"/>
 </for>
 <kw name="Create File" owner="OperatingSystem">
 <arg>${OUTPUT_CSV}</arg>
 <arg>${csv_content}</arg>
 <arg>encoding=UTF-8</arg>
 <doc>Creates a file with the given content and encoding.</doc>
-<status status="NOT RUN" start="2026-08-23T12:08:50.969205" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.078244" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
 <arg>\n📁 Resultados salvos:</arg>
 <arg>console=True</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2026-08-23T12:08:50.969205" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.079241" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
 <arg>- JSON: ${OUTPUT_JSON}</arg>
 <arg>console=True</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2026-08-23T12:08:50.970202" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.079241" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
 <arg>- CSV: ${OUTPUT_CSV}</arg>
 <arg>console=True</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2026-08-23T12:08:50.970202" elapsed="0.000000"/>
+<status status="NOT RUN" start="2026-08-23T22:10:03.080521" elapsed="0.000000"/>
 </kw>
 <doc>Busca catálogo completo, consulta estoques e organiza resultados.</doc>
 <tag>api</tag>
 <tag>catalogo</tag>
 <tag>completo</tag>
 <tag>estoque</tag>
-<status status="FAIL" start="2026-08-23T12:08:50.155649" elapsed="0.814553">Resolving variable '${estoques_organizados[4]}' failed: KeyError: 4</status>
+<status status="FAIL" start="2026-08-23T22:10:03.009698" elapsed="0.071915">No keyword with name 'Processar Catalogo Completo' found.</status>
 </test>
-<status status="FAIL" start="2026-08-23T12:08:49.896717" elapsed="1.074479"/>
+<status status="FAIL" start="2026-08-23T22:10:02.540010" elapsed="0.550795"/>
 </suite>
 <statistics>
 <total>
@@ -296,5 +274,19 @@
 </suite>
 </statistics>
 <errors>
+<msg time="2026-08-23T22:10:03.007703" level="ERROR">Error in file 'C:\ws_2026\PesquisadeMercado\tests\catalogo.robot' on line 5: Importing library 'catalogo_api.CatalogoAPI' failed: ModuleNotFoundError: No module named 'catalogo_api'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\admin\AppData\Local\Programs\Python\Python310\Scripts\robot.exe
+  C:\ws_2026\PesquisadeMercado\scripts
+  C:\Users\admin\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\admin\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\admin\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\admin\AppData\Local\Programs\Python\Python310
+  C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages
+  C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\win32
+  C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\win32\lib
+  C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\Pythonwin</msg>
 </errors>
 </robot>
