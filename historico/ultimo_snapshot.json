@@ -1,5 +1,5 @@
 {
-  "timestamp": "20261015_031725",
+  "timestamp": "20261015_085211",
   "produtos": {
     "1349": {
       "estoque": 3,
@@ -294,16 +294,12 @@
       "valor": 5.99
     },
     "1395": {
-      "estoque": 6,
+      "estoque": 3,
       "valor": 7.39
     },
     "1720": {
       "estoque": 4,
       "valor": 6.99
-    },
-    "1397": {
-      "estoque": 3,
-      "valor": 5.49
     },
     "1357": {
       "estoque": 2,
