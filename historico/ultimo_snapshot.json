@@ -1,12 +1,12 @@
 {
-  "timestamp": "20261123_195107",
+  "timestamp": "20261124_043636",
   "produtos": {
     "1349": {
-      "estoque": 1,
+      "estoque": 3,
       "valor": 14.89
     },
     "1541": {
-      "estoque": 3,
+      "estoque": 4,
       "valor": 14.89
     },
     "1810": {
@@ -23,11 +23,11 @@
     },
     "1574": {
       "estoque": 5,
-      "valor": 12.99
+      "valor": 11.99
     },
     "156": {
-      "estoque": 7,
-      "valor": 4.99
+      "estoque": 6,
+      "valor": 4.49
     },
     "1563": {
       "estoque": 2,
@@ -35,11 +35,15 @@
     },
     "288": {
       "estoque": 4,
-      "valor": 3.49
+      "valor": 3.79
     },
     "1593": {
       "estoque": 8,
-      "valor": 3.49
+      "valor": 3.79
+    },
+    "1716": {
+      "estoque": 2,
+      "valor": 7.99
     },
     "1307": {
       "estoque": 2,
@@ -126,7 +130,7 @@
       "valor": 7.49
     },
     "1738": {
-      "estoque": 2,
+      "estoque": 1,
       "valor": 7.49
     },
     "1733": {
@@ -170,7 +174,7 @@
       "valor": 9.99
     },
     "58": {
-      "estoque": 2,
+      "estoque": 1,
       "valor": 15.99
     },
     "1804": {
@@ -178,7 +182,7 @@
       "valor": 29.99
     },
     "1375": {
-      "estoque": 1,
+      "estoque": 2,
       "valor": 12.99
     },
     "1591": {
@@ -187,19 +191,31 @@
     },
     "228": {
       "estoque": 4,
-      "valor": 2.99
+      "valor": 3.29
     },
     "1704": {
       "estoque": 5,
       "valor": 8.99
     },
+    "1499": {
+      "estoque": 3,
+      "valor": 5.29
+    },
     "90": {
-      "estoque": 2,
+      "estoque": 3,
       "valor": 5.29
     },
     "1525": {
       "estoque": 3,
       "valor": 5.29
+    },
+    "1318": {
+      "estoque": 5,
+      "valor": 5.49
+    },
+    "89": {
+      "estoque": 3,
+      "valor": 4.99
     },
     "1413": {
       "estoque": 3,
@@ -222,8 +238,16 @@
       "valor": 20.99
     },
     "1789": {
-      "estoque": 3,
+      "estoque": 4,
       "valor": 19.99
+    },
+    "1629": {
+      "estoque": 2,
+      "valor": 20.99
+    },
+    "1399": {
+      "estoque": 2,
+      "valor": 20.99
     },
     "1421": {
       "estoque": 4,
@@ -259,7 +283,7 @@
     },
     "1689": {
       "estoque": 1,
-      "valor": 38.99
+      "valor": 44.99
     },
     "1442": {
       "estoque": 3,
@@ -285,16 +309,12 @@
       "estoque": 5,
       "valor": 7.39
     },
-    "1801": {
-      "estoque": 1,
-      "valor": 11.99
-    },
     "1511": {
       "estoque": 9,
       "valor": 4.69
     },
     "1397": {
-      "estoque": 17,
+      "estoque": 16,
       "valor": 5.49
     },
     "1357": {
@@ -309,12 +329,28 @@
       "estoque": 1,
       "valor": 9.49
     },
+    "1572": {
+      "estoque": 1,
+      "valor": 9.59
+    },
     "1820": {
       "estoque": 1,
       "valor": 11.99
     },
     "1821": {
       "estoque": 1,
+      "valor": 11.99
+    },
+    "1520": {
+      "estoque": 2,
+      "valor": 11.99
+    },
+    "13": {
+      "estoque": 20,
+      "valor": 6.79
+    },
+    "1458": {
+      "estoque": 2,
       "valor": 11.99
     },
     "18": {
@@ -326,12 +362,20 @@
       "valor": 11.99
     },
     "1465": {
-      "estoque": 19,
+      "estoque": 18,
       "valor": 6.79
     },
     "1589": {
       "estoque": 24,
       "valor": 6.79
+    },
+    "1794": {
+      "estoque": 20,
+      "valor": 6.79
+    },
+    "1571": {
+      "estoque": 4,
+      "valor": 4.89
     },
     "1668": {
       "estoque": 2,
@@ -346,8 +390,12 @@
       "valor": 29.99
     },
     "1332": {
-      "estoque": 3,
+      "estoque": 4,
       "valor": 35.49
+    },
+    "277": {
+      "estoque": 4,
+      "valor": 4.49
     },
     "1445": {
       "estoque": 1,
@@ -373,13 +421,21 @@
       "estoque": 6,
       "valor": 10.89
     },
+    "1734": {
+      "estoque": 4,
+      "valor": 5.49
+    },
+    "270": {
+      "estoque": 5,
+      "valor": 5.49
+    },
     "48": {
       "estoque": 4,
       "valor": 11.99
     },
     "205": {
-      "estoque": 3,
-      "valor": 14.59
+      "estoque": 2,
+      "valor": 14.89
     },
     "1587": {
       "estoque": 1,
@@ -391,7 +447,7 @@
     },
     "1467": {
       "estoque": 2,
-      "valor": 14.59
+      "valor": 14.89
     },
     "1330": {
       "estoque": 3,
@@ -402,7 +458,7 @@
       "valor": 5.39
     },
     "1550": {
-      "estoque": 2,
+      "estoque": 4,
       "valor": 8.39
     },
     "268": {
@@ -410,16 +466,12 @@
       "valor": 5.49
     },
     "1626": {
-      "estoque": 3,
+      "estoque": 2,
       "valor": 5.89
     },
     "1364": {
       "estoque": 4,
       "valor": 4.99
-    },
-    "1334": {
-      "estoque": 4,
-      "valor": 11.89
     },
     "1372": {
       "estoque": 4,
@@ -434,7 +486,7 @@
       "valor": 2.99
     },
     "1623": {
-      "estoque": 1,
+      "estoque": 3,
       "valor": 7.99
     },
     "1758": {
@@ -458,7 +510,7 @@
       "valor": 10.89
     },
     "279": {
-      "estoque": 3,
+      "estoque": 4,
       "valor": 2.39
     },
     "1561": {
@@ -467,11 +519,11 @@
     },
     "68": {
       "estoque": 2,
-      "valor": 8.69
+      "valor": 9.29
     },
     "70": {
       "estoque": 2,
-      "valor": 8.69
+      "valor": 9.29
     },
     "1496": {
       "estoque": 4,
@@ -558,16 +610,12 @@
       "valor": 16.49
     },
     "1768": {
-      "estoque": 1,
+      "estoque": 4,
       "valor": 7.99
     },
     "1411": {
       "estoque": 1,
       "valor": 7.29
-    },
-    "280": {
-      "estoque": 1,
-      "valor": 26.89
     },
     "53": {
       "estoque": 4,
@@ -585,21 +633,49 @@
       "estoque": 4,
       "valor": 5.49
     },
+    "1781": {
+      "estoque": 2,
+      "valor": 7.99
+    },
     "1773": {
       "estoque": 2,
       "valor": 7.99
     },
+    "1779": {
+      "estoque": 2,
+      "valor": 7.99
+    },
     "1774": {
+      "estoque": 1,
+      "valor": 7.99
+    },
+    "1780": {
       "estoque": 2,
       "valor": 7.99
     },
     "1741": {
-      "estoque": 2,
+      "estoque": 4,
       "valor": 6.99
+    },
+    "1806": {
+      "estoque": 1,
+      "valor": 4.19
+    },
+    "1674": {
+      "estoque": 1,
+      "valor": 4.19
+    },
+    "1673": {
+      "estoque": 1,
+      "valor": 4.19
     },
     "1675": {
       "estoque": 1,
       "valor": 4.19
+    },
+    "1620": {
+      "estoque": 4,
+      "valor": 7.98
     },
     "1316": {
       "estoque": 2,
@@ -614,11 +690,11 @@
       "valor": 5.19
     },
     "265": {
-      "estoque": 2,
+      "estoque": 4,
       "valor": 5.39
     },
     "1535": {
-      "estoque": 3,
+      "estoque": 4,
       "valor": 3.89
     },
     "1346": {
@@ -629,6 +705,10 @@
       "estoque": 2,
       "valor": 25.99
     },
+    "278": {
+      "estoque": 5,
+      "valor": 9.89
+    },
     "132": {
       "estoque": 31,
       "valor": 1.59
@@ -636,6 +716,10 @@
     "267": {
       "estoque": 3,
       "valor": 1.99
+    },
+    "1344": {
+      "estoque": 4,
+      "valor": 11.59
     },
     "1755": {
       "estoque": 1,
@@ -658,7 +742,7 @@
       "valor": 26.49
     },
     "1754": {
-      "estoque": 1,
+      "estoque": 2,
       "valor": 15.49
     },
     "1767": {
@@ -670,27 +754,31 @@
       "valor": 4.99
     },
     "1428": {
-      "estoque": 1,
+      "estoque": 5,
       "valor": 7.99
     },
     "1427": {
-      "estoque": 2,
+      "estoque": 5,
       "valor": 7.99
     },
     "1485": {
       "estoque": 2,
       "valor": 7.99
     },
+    "1636": {
+      "estoque": 3,
+      "valor": 7.98
+    },
     "1333": {
       "estoque": 5,
       "valor": 7.99
     },
     "38": {
-      "estoque": 3,
+      "estoque": 7,
       "valor": 2.49
     },
     "1732": {
-      "estoque": 8,
+      "estoque": 6,
       "valor": 1.49
     },
     "1777": {
@@ -739,15 +827,15 @@
     },
     "103": {
       "estoque": 2,
-      "valor": 5.49
+      "valor": 5.79
     },
     "1407": {
       "estoque": 1,
-      "valor": 5.69
+      "valor": 5.79
     },
     "100": {
-      "estoque": 2,
-      "valor": 5.49
+      "estoque": 1,
+      "valor": 5.79
     },
     "1314": {
       "estoque": 4,
@@ -759,6 +847,10 @@
     },
     "1486": {
       "estoque": 6,
+      "valor": 14.99
+    },
+    "1352": {
+      "estoque": 3,
       "valor": 13.99
     },
     "1401": {
@@ -797,12 +889,16 @@
       "estoque": 3,
       "valor": 15.99
     },
+    "1786": {
+      "estoque": 8,
+      "valor": 5.99
+    },
     "165": {
       "estoque": 5,
       "valor": 3.99
     },
     "1512": {
-      "estoque": 3,
+      "estoque": 4,
       "valor": 3.99
     },
     "1441": {
@@ -823,15 +919,15 @@
     },
     "43": {
       "estoque": 5,
-      "valor": 6.99
+      "valor": 7.49
     },
     "1687": {
       "estoque": 1,
-      "valor": 6.99
+      "valor": 7.49
     },
     "72": {
       "estoque": 3,
-      "valor": 6.99
+      "valor": 7.49
     },
     "1493": {
       "estoque": 1,
@@ -875,7 +971,7 @@
     },
     "1700": {
       "estoque": 1,
-      "valor": 12.89
+      "valor": 13.99
     },
     "1331": {
       "estoque": 2,
@@ -933,8 +1029,16 @@
       "estoque": 6,
       "valor": 9.69
     },
+    "1348": {
+      "estoque": 3,
+      "valor": 3.89
+    },
+    "1503": {
+      "estoque": 3,
+      "valor": 3.89
+    },
     "1682": {
-      "estoque": 2,
+      "estoque": 3,
       "valor": 3.79
     },
     "1602": {
