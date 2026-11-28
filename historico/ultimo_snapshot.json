@@ -1,5 +1,5 @@
 {
-  "timestamp": "20261128_043111",
+  "timestamp": "20261128_135336",
   "produtos": {
     "1349": {
       "estoque": 1,
@@ -22,7 +22,7 @@
       "valor": 8.99
     },
     "1574": {
-      "estoque": 5,
+      "estoque": 4,
       "valor": 11.99
     },
     "156": {
@@ -230,7 +230,7 @@
       "valor": 5.29
     },
     "1318": {
-      "estoque": 5,
+      "estoque": 4,
       "valor": 5.49
     },
     "89": {
@@ -370,12 +370,8 @@
       "valor": 11.99
     },
     "13": {
-      "estoque": 18,
+      "estoque": 17,
       "valor": 6.79
-    },
-    "1819": {
-      "estoque": 1,
-      "valor": 11.99
     },
     "1458": {
       "estoque": 2,
@@ -874,15 +870,11 @@
       "valor": 6.99
     },
     "55": {
-      "estoque": 12,
+      "estoque": 10,
       "valor": 5.79
     },
     "190": {
-      "estoque": 3,
-      "valor": 5.79
-    },
-    "103": {
-      "estoque": 1,
+      "estoque": 2,
       "valor": 5.79
     },
     "1385": {
